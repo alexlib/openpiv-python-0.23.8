@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.8"
+
+notifications:
+  email: false
+
+install:
+    - pip install -q numpy pytest
+    - pip install -e .
+
+script:
+  - pytest openpiv
